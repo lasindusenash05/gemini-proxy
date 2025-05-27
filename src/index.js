@@ -4,10 +4,6 @@ export default {
     const apiKey = "AIzaSyDusmRAhk1DBxmmzUmUmmOzV78nrs0KQ1U";
     // use apiKey with fetch or wherever needed
   },
-};
-
-interface Env {
-  GEMINI_API_KEY: string;
 }
 export default {
   async fetch(request, env, ctx) {
