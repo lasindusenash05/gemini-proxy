@@ -1,5 +1,15 @@
 // Cloudflare Worker for Gemini API Proxy
 export default {
+  async fetch(request: Request, env: Env) {
+    const apiKey = env.GEMINI_API_KEY;
+    // use apiKey with fetch or wherever needed
+  },
+};
+
+interface Env {
+  GEMINI_API_KEY: string;
+}
+export default {
   async fetch(request, env, ctx) {
     // Handle CORS preflight requests
     if (request.method === 'OPTIONS') {
