@@ -1,0 +1,18 @@
+json
+{
+  "name": "gemini-proxy",
+  "version": "1.0.0",
+  "description": "Gemini API Proxy for Cloudflare Workers",
+  "main": "src/index.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": ["gemini", "ai", "proxy", "cloudflare", "workers"],
+  "author": "Lasindu",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
